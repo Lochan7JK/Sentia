@@ -87,7 +87,12 @@
 
                 <a href="./image_analysis.html"  class="card-link">
                     <div class="card">
-                        <img src="images/image.avif" alt="Image Sentiment Analysis"> 
+                      <picture>
+                        <source srcset="./images/image.avif" type="image/avif">
+                        <source srcset="./images/image.png" type="image/png">
+                        <img src="./images/image.png" alt="Image Sentiment Analysis"> 
+                      </picture>
+
                         <h3>Image Sentiment Analysis</h3>
                         <p>Detect emotional tone from images by analyzing facial expressions, colors, and visual elements.</p>
                     </div>
