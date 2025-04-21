@@ -87,12 +87,23 @@
 
                 <a href="./image_analysis.html"  class="card-link">
                     <div class="card">
+                      <!-- Problem: This was because avif image wasn't working on old versions of androids
+                       AVIF (AV1 Image File Format) is a modern image format that offers excellent compression and quality, but:
+                       📱 Not All Mobile Browsers Support AVIF Yet
+                       So, if your mobile browser or OS doesn’t support AVIF, the image just won’t display.
+                       
+                       Solution: You can add a fallback image for browsers that don’t support AVIF:
+                       This tells the browser:
+                       * “Use AVIF if you can.”
+                       * “If not, fall back to PNG.”
+
                       <picture>
                         <source srcset="./images/image.avif" type="image/avif">
                         <source srcset="./images/image.png" type="image/png">
                         <img src="./images/image.png" alt="Image Sentiment Analysis"> 
-                      </picture>
+                      </picture> -->
 
+                        <img src="images/image.png" alt="Image Sentiment Analysis"> 
                         <h3>Image Sentiment Analysis</h3>
                         <p>Detect emotional tone from images by analyzing facial expressions, colors, and visual elements.</p>
                     </div>
